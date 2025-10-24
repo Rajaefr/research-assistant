@@ -1,6 +1,5 @@
 
 
-```markdown
 # 🧠 Research Assistant – Chrome Extension + Spring Boot API
 
 Ce projet est un **assistant de recherche intelligent** combinant :
