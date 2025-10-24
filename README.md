@@ -174,7 +174,7 @@ Content-Type: application/json
 
 **Rajaa Farid Elidrissi**
 
-## 🪪 Licence
+##  Licence
 
 Ce projet est sous licence **MIT**.
 Tu es libre de le modifier et de le redistribuer avec mention de l’auteur original.
