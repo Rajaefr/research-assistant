@@ -1,6 +1,4 @@
-
-
-# 🧠 Research Assistant – Chrome Extension + Spring Boot API
+# Research Assistant – Chrome Extension + Spring Boot API
 
 Ce projet est un **assistant de recherche intelligent** combinant :
 - une **extension Chrome** pour interagir avec le texte sélectionné sur une page web,
@@ -8,17 +6,17 @@ Ce projet est un **assistant de recherche intelligent** combinant :
 
 ---
 
-## 🚀 Fonctionnalités principales
+##  Fonctionnalités principales
 
-### 🧩 Côté Extension Chrome
+###  Côté Extension Chrome
 - **Sélection de texte** sur n’importe quelle page web.
 - **Deux actions principales :**
-  - 🔹 **Summarize** → Résume le texte sélectionné.
-  - 🔹 **Suggest** → Suggère des sujets ou lectures connexes.
+  -  **Summarize** → Résume le texte sélectionné.
+  -  **Suggest** → Suggère des sujets ou lectures connexes.
 - **Bloc-notes intégré** pour sauvegarder des notes localement.
 - Interface simple et responsive intégrée dans un panneau latéral.
 
-### ⚙️ Côté Backend (Spring Boot)
+###  Côté Backend (Spring Boot)
 - Expose une API REST (`/api/research/process`) qui :
   - reçoit le texte et l’opération demandée (`summarize` ou `suggest`),
   - interroge le modèle **Gemini** via son API,
@@ -27,9 +25,9 @@ Ce projet est un **assistant de recherche intelligent** combinant :
 
 ---
 
-## 🧱 Structure du projet
+##  Structure du projet
 
-### 🌐 Extension Chrome
+###  Extension Chrome
 ```
 
 research-assistant-extension/
@@ -41,7 +39,7 @@ research-assistant-extension/
 
 ```
 
-### 💡 Backend Spring Boot
+###  Backend Spring Boot
 ```
 
 research-assistant-backend/
@@ -59,9 +57,9 @@ research-assistant-backend/
 
 ---
 
-## ⚙️ Installation et Exécution
+##  Installation et Exécution
 
-### 🖥️ 1. Cloner le projet
+###  1. Cloner le projet
 ```bash
 git clone https://github.com/<TON_USERNAME>/research-assistant.git
 cd research-assistant
@@ -69,9 +67,9 @@ cd research-assistant
 
 ---
 
-### 🧠 2. Configuration du Backend
+###  2. Configuration du Backend
 
-#### 🔑 Ajouter les variables dans `application.properties` :
+####  Ajouter les variables dans `application.properties` :
 
 ```properties
 server.port=8080
@@ -81,24 +79,24 @@ gemini.api.url=https://generativelanguage.googleapis.com/v1beta/models/gemini-pr
 gemini.api.key=${GEMINI_KEY}
 ```
 
-> 💡 Remplace `${GEMINI_KEY}` par ta clé d’API **Google Gemini** ou définis-la dans ton environnement :
+>  Remplace `${GEMINI_KEY}` par ta clé d’API **Google Gemini** ou définis-la dans ton environnement :
 >
 > ```bash
 > export GEMINI_KEY=ta_cle_api
 > ```
 
-#### ▶️ Démarrer le serveur :
+####  Démarrer le serveur :
 
 ```bash
 mvn spring-boot:run
 ```
 
 Le backend sera disponible sur :
-👉 [http://localhost:8080](http://localhost:8080)
+ [http://localhost:8080](http://localhost:8080)
 
 ---
 
-### 🌐 3. Configuration de l’Extension Chrome
+### $ 3. Configuration de l’Extension Chrome
 
 1. Ouvre **Google Chrome** → `chrome://extensions/`
 2. Active **Mode développeur**
@@ -108,7 +106,7 @@ Le backend sera disponible sur :
 
 ---
 
-## 🧩 Exemple d’utilisation
+##  Exemple d’utilisation
 
 1. Ouvre une page web contenant un article ou du texte.
 2. Sélectionne un paragraphe.
@@ -120,7 +118,7 @@ Le backend sera disponible sur :
 
 ---
 
-## 🧠 Exemple de réponse Gemini
+##  Exemple de réponse Gemini
 
 ```json
 {
@@ -138,18 +136,18 @@ Le backend sera disponible sur :
 
 ---
 
-## 🧩 Technologies utilisées
+##  Technologies utilisées
 
 | Côté           | Technologie           | Rôle                                 |
 | -------------- | --------------------- | ------------------------------------ |
-| 🌐 Frontend    | HTML, CSS, JavaScript | Interface utilisateur de l’extension |
-| 🔧 Backend     | Spring Boot (Java)    | API REST pour traiter les requêtes   |
-| 🤖 AI          | Google Gemini API     | Génération de texte intelligent      |
-| ⚙️ Persistance | Chrome Storage API    | Sauvegarde locale des notes          |
+|  Frontend    | HTML, CSS, JavaScript | Interface utilisateur de l’extension |
+|  Backend     | Spring Boot (Java)    | API REST pour traiter les requêtes   |
+|  AI          | Google Gemini API     | Génération de texte intelligent      |
+|  Persistance | Chrome Storage API    | Sauvegarde locale des notes          |
 
 ---
 
-## 🧪 Exemple de requête API
+##  Exemple de requête API
 
 ### Requête
 
@@ -172,7 +170,7 @@ Content-Type: application/json
 ```
 
 
-## 👩‍💻 Auteur
+##  Auteur
 
 **Rajaa Farid Elidrissi**
 
