@@ -8,24 +8,30 @@
 <body>
     <div class="container">
         <div class="header">
-<h2>Research Assistant</h2>
+            <h2> Research Assistant</h2>
         </div>
-        <div class="actions">
-<button id="summarizeBtn">Summarize</button>
+
+        <div class="actions-section">
+            <div class="actions-title">Quick Actions</div>
+            <div class="actions">
+                <button id="summarizeBtn">
+                    Summarize
+                </button>
+                <button id="suggestBtn">
+                    Suggest
+                </button>
+            </div>
         </div>
-          <div class="actions">
-<button id="suggestBtn">suggest</button>
-        </div>
-         <div class="notes">
+
+        <div class="notes">
             <h3>Research Notes</h3>
-            <textarea  id="notes" placeholder="Take notes here"></textarea>
-<button id="saveNotesBtn">Save Notes</button>
+            <textarea id="notes" placeholder="Take notes here..."></textarea>
+            <button id="saveNotesBtn">
+                Save Notes
+            </button>
         </div>
 
-        <div id="results">
-
-        </div>
-
+        <div id="results"></div>
         <script src="sidepanel.js"></script>
     </div>
 </body>
